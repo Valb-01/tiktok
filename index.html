@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TikTok Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="#" class="nav-logo">
+      <svg width="118" height="34" viewBox="0 0 118 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M9.065 3.5h4.397v17.252c0 3.785-2.696 6.248-6.766 6.248C2.625 27 0 24.537 0 20.752c0-3.765 2.625-6.21 6.696-6.21.47 0 .94.04 1.41.12l.959.18V18.7l-.959-.3a4.2 4.2 0 0 0-1.41-.24c-1.668 0-2.76.9-2.76 2.59 0 1.671 1.092 2.571 2.76 2.571 1.648 0 2.37-.82 2.37-2.571V3.5z"
+          fill="#161823" />
+        <path
+          d="M22.653 10.14v3.93c-.293-.08-.607-.12-.94-.12-2.39 0-3.98 1.671-3.98 4.265v8.53H13.64V10.38h4.093v2.07c.84-1.59 2.35-2.43 4.16-2.43.293 0 .566.04.76.12z"
+          fill="#161823" />
+        <path
+          d="M24.08 18.7c0-5.175 3.24-8.7 8.12-8.7 4.882 0 8.121 3.525 8.121 8.7 0 5.176-3.24 8.7-8.12 8.7-4.882 0-8.121-3.524-8.121-8.7zm12.26 0c0-2.93-1.668-4.72-4.14-4.72-2.47 0-4.14 1.79-4.14 4.72 0 2.932 1.67 4.72 4.14 4.72 2.472 0 4.14-1.788 4.14-4.72z"
+          fill="#161823" />
+        <path
+          d="M48.77 22.54l3.14 2.45c-1.37 1.39-3.3 2.11-5.55 2.11-4.9 0-8.14-3.44-8.14-8.7 0-5.175 3.24-8.7 8.14-8.7 2.17 0 4.04.68 5.41 1.97l-3.07 2.53c-.68-.64-1.55-.98-2.34-.98-2.39 0-4.06 1.79-4.06 4.72 0 2.94 1.67 4.72 4.06 4.72.83 0 1.73-.38 2.41-.98v-.14z"
+          fill="#161823" />
+        <path d="M52.56 3.5h4.09v12.78l5.14-5.9h5.04l-6.03 6.65 6.3 9.72h-4.92l-4.19-6.65-1.34 1.47v5.18H52.56V3.5z"
+          fill="#161823" />
+        <path
+          d="M79.84 3.5c.18 3.405 2.75 6.128 6.16 6.572v4.056c-2.19-.216-4.2-.97-5.9-2.16v9.91c0 4.885-3.97 8.122-8.78 8.122-4.9 0-8.19-3.44-8.19-8.7 0-5.175 3.29-8.7 8.19-8.7.47 0 .93.04 1.38.11v4.205c-.45-.12-.91-.19-1.38-.19-2.47 0-4.15 1.79-4.15 4.72 0 2.91 1.68 4.72 4.15 4.72 2.38 0 4.07-1.67 4.07-3.95V3.5h4.45z"
+          fill="#fe2c55" />
+        <path
+          d="M86 10.072V6.016c.17.02.33.04.5.04 1.96 0 3.74-.6 5.2-1.62L91.74 4v.02l.04-.02c1.63 1.13 3.63 1.79 5.79 1.79.47 0 .93-.04 1.38-.1v3.922c-1.84-.22-3.53-.89-4.97-1.89v.04c-.01 0-.01 0-.01-.01C93.97 10.013 86 10.072 86 10.072z"
+          fill="#25f4ee" />
+      </svg>
+    </a>
+    <div class="nav-right">
+      <a href="#" class="nav-upload-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="12" y1="5" x2="12" y2="19" />
+          <line x1="5" y1="12" x2="19" y2="12" />
+        </svg>
+        Upload
+      </a>
+      <button class="nav-login-btn">Log in</button>
+    </div>
+  </nav>
+
+  <div class="page">
+
+    <!-- LEFT PANEL -->
+    <div class="left-panel">
+      <div class="orb orb-red"></div>
+      <div class="orb orb-cyan"></div>
+      <div class="phones-wrapper">
+        <div class="phone phone-left">
+          <div class="phone-screen">
+            <div class="phone-gradient"></div>
+            <div class="phone-notch"></div>
+            <div class="phone-user" style="bottom:46px;left:8px;">
+              <div class="phone-avatar" style="background:linear-gradient(135deg,#ff9800,#e91e63);"></div>
+              <div>
+                <div class="phone-username">@travel.moods</div>
+                <div class="phone-desc">Sunset in Santorini 🌅</div>
+              </div>
+            </div>
+            <div class="phone-heart">
+              <div class="heart-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+                <span class="icon-count">48.2K</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="phone phone-right">
+          <div class="phone-screen">
+            <div class="phone-gradient"></div>
+            <div class="phone-notch"></div>
+            <div class="phone-user" style="bottom:46px;left:8px;">
+              <div class="phone-avatar" style="background:linear-gradient(135deg,#00bcd4,#4caf50);"></div>
+              <div>
+                <div class="phone-username">@chef.life</div>
+                <div class="phone-desc">Secret ramen 🍜</div>
+              </div>
+            </div>
+            <div class="phone-heart">
+              <div class="heart-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+                <span class="icon-count">92.1K</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="phone phone-center">
+          <div class="phone-screen">
+            <div class="phone-gradient"></div>
+            <div class="phone-notch"></div>
+            <div class="phone-user">
+              <div class="phone-avatar"></div>
+              <div>
+                <div class="phone-username">@dance.universe</div>
+                <div class="phone-desc">New choreo drop 🔥</div>
+              </div>
+            </div>
+            <div class="phone-heart">
+              <div class="heart-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+                <span class="icon-count">213K</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="left-caption">Find videos that make your day</div>
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right-panel">
+      <h1 class="login-title">Log in to TikTok</h1>
+
+      <div class="tab-row">
+        <div class="tab active" data-tab="phone" onclick="switchTab('phone',this)">Phone / Email / Username</div>
+        <div class="tab" data-tab="qr" onclick="switchTab('qr',this)">QR code</div>
+      </div>
+
+      <!-- Phone/Email Section -->
+      <div class="section active" id="tab-phone">
+        <div style="display:flex;gap:18px;margin-bottom:18px;border-bottom:1px solid var(--border);padding-bottom:0;">
+          <div class="tab active" style="font-size:14px;padding:8px 0;" id="sub-phone" onclick="switchSub('phone')">
+            Phone</div>
+          <div class="tab" style="font-size:14px;padding:8px 0;" id="sub-email" onclick="switchSub('email')">Email /
+            Username</div>
+        </div>
+
+        <!-- Phone -->
+        <div id="input-phone">
+          <div class="form-group">
+            <label class="form-label">Phone number</label>
+            <div class="input-row">
+              <div class="country-select">🇩🇿 +213 <span class="country-arrow">▾</span></div>
+              <input type="text" id="phoneInput" placeholder="Phone number" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Enter 6-digit code</label>
+            <div class="input-row">
+              <input type="text" id="codeInput" placeholder="Enter 6-digit code" maxlength="6" />
+              <button class="send-code-btn">Send code</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div id="input-email" style="display:none;">
+          <div class="form-group">
+            <label class="form-label">Email or username</label>
+            <div class="input-row">
+              <input type="text" id="emailInput" placeholder="Email or username" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Password</label>
+            <div class="input-row">
+              <input type="password" id="pwdInput" placeholder="Password" />
+              <button onclick="togglePwd()" class="send-code-btn">Show</button>
+            </div>
+          </div>
+        </div>
+
+        <p class="agree-text">
+          By continuing, you agree to TikTok's <a href="#">Terms of Service</a> and confirm that you have read TikTok's
+          <a href="#">Privacy Policy</a>.
+        </p>
+
+        <button class="login-btn" id="loginBtn" onclick="handleLogin()">Log in</button>
+
+        <!-- Status message -->
+        <p id="statusMsg"
+          style="display:none;text-align:center;margin-top:12px;font-size:13px;color:green;font-weight:600;"></p>
+
+        <div class="divider-line">Or</div>
+
+        <div class="other-logins">
+          <div class="other-title">Continue with</div>
+          <div class="social-grid">
+            <button class="social-btn">
+              <div class="social-icon"><svg viewBox="0 0 24 24" fill="#1877f2">
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg></div>
+              Continue with Facebook
+            </button>
+            <button class="social-btn">
+              <div class="social-icon"><svg viewBox="0 0 48 48">
+                  <path fill="#FFC107"
+                    d="M43.6 20.1H42V20H24v8h11.3C33.6 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 7.9 2.9l5.7-5.7C34.3 6.8 29.4 5 24 5 12.9 5 4 13.9 4 25s8.9 20 20 20 20-8.9 20-20c0-1.3-.2-2.5-.4-3.9z" />
+                  <path fill="#FF3D00"
+                    d="M6.3 15.5l6.6 4.8C14.7 16.9 19 14 24 14c3.1 0 5.8 1.1 7.9 2.9l5.7-5.7C34.3 7.8 29.4 6 24 6 16.3 6 9.7 10 6.3 15.5z" />
+                  <path fill="#4CAF50"
+                    d="M24 45c5.2 0 10-1.8 13.7-4.7l-6.3-5.3C29.5 36.6 26.9 37.6 24 37.6c-5.2 0-9.6-3.4-11.3-8.1l-6.6 5.1C9.7 41.2 16.3 45 24 45z" />
+                  <path fill="#1976D2"
+                    d="M43.6 20.1H42V20H24v8h11.3c-.8 2.3-2.3 4.3-4.3 5.7l6.3 5.3C41.6 36.2 44 31 44 25c0-1.6-.2-3.1-.4-4.9z" />
+                </svg></div>
+              Continue with Google
+            </button>
+            <button class="social-btn">
+              <div class="social-icon"><svg viewBox="0 0 24 24" fill="#000">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.261 5.636 5.903-5.636zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg></div>
+              Continue with X
+            </button>
+          </div>
+        </div>
+
+        <a href="#" class="trouble-link">Trouble logging in?</a>
+      </div>
+
+      <!-- QR Section -->
+      <div class="section" id="tab-qr">
+        <div class="qr-section">
+          <div class="qr-box">
+            <div class="qr-corner tl"></div>
+            <div class="qr-corner tr"></div>
+            <div class="qr-corner bl"></div>
+            <div class="qr-pattern" id="qrPattern"></div>
+          </div>
+          <p class="qr-label"><strong>Scan QR code with TikTok app</strong><br />Open TikTok → Profile → QR icon</p>
+          <button class="show-more-btn" onclick="switchTab('phone',document.querySelector('[data-tab=phone]'))">Log in
+            with phone / email</button>
+        </div>
+      </div>
+
+      <div class="signup-footer">Don't have an account? <a href="#">Sign up</a></div>
+    </div>
+  </div>
+
+  <footer>
+    <a href="#">Company</a><a href="#">About</a><a href="#">Newsroom</a>
+    <a href="#">Contact</a><a href="#">Careers</a><a href="#">Support</a>
+    <a href="#">Help</a><a href="#">Safety</a><a href="#">Privacy</a><a href="#">Terms</a>
+    <p class="copy">©2026 TikTok</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
